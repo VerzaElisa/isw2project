@@ -9,10 +9,10 @@ public class Variables {
     public static final String CSV_JIRA = "02-ticketdata.csv";
     public static final String CSV_VERSIONS = "03-versionsdata.csv";
     public static final String CSV_METHRICS = "04-data.csv";
-    public static final boolean DOWNLOAD_DATA = false;
-    public static final boolean DOWNLOAD_FILES = false;
+    public static final boolean DOWNLOAD_DATA = true;
+    public static final boolean DOWNLOAD_FILES = true;
     public static final boolean DOWNLOAD_COMMIT = true;
-    public static final boolean DOWNLOAD_JIRA = false;
+    public static final boolean DOWNLOAD_JIRA = true;
     public static final boolean DOWNLOAD_VERSIONS = true;
     public static final boolean LABELING = true;
     public static final String USERNAME = "VerzaElisa";
