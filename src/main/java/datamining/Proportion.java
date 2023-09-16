@@ -114,7 +114,7 @@ public class Proportion {
         if(index.length == 0){
             index[0] = csv.size(); 
         }
-        while(affectedCounter<6 || i<csv.size()){
+        while(i<index[0]){
             if(csv.get(i).get(3).length()!=1){
                 affectedCounter++;
             }

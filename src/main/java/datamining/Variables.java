@@ -4,13 +4,13 @@ import java.util.logging.Logger;
 
 public class Variables {
     private static final Logger LOGGER = Logger.getLogger(Variables.class.getName());
-    public static final String[] PRJ_NAME = {"BOOKKEEPER", "SYNCOPE", "TAJO"};
+    protected static final String[] PRJ_NAME = {"BOOKKEEPER", "SYNCOPE", "TAJO"};
     public static final String CSV_COMMIT = "01-commitdata.csv";
     public static final String CSV_JIRA = "02-ticketdata.csv";
     public static final String CSV_VERSIONS = "03-versionsdata.csv";
     public static final String CSV_METHRICS = "04-data.csv";
-    public static final boolean DOWNLOAD_DATA = true;
-    public static final boolean DOWNLOAD_FILES = true;
+    public static final boolean DOWNLOAD_DATA = false;
+    public static final boolean DOWNLOAD_FILES = false;
     public static final boolean DOWNLOAD_COMMIT = true;
     public static final boolean DOWNLOAD_JIRA = true;
     public static final boolean DOWNLOAD_VERSIONS = true;

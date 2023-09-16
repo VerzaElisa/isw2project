@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
@@ -237,7 +238,7 @@ public class DataRetrieve
 
             if(values.length()==1 && incremental){
                 p = Proportion.pCalc(file, cs, j);
-                LOGGER.info("Ticket: "+csvS.get(j).get(2));
+                LOGGER.log(Level.INFO, "Ticket:{}", csvS.get(j).get(2));
                 String[] injVer = new String[] {Proportion.ivCalc(csvS.get(j).get(4),csvS.get(j).get(5), p)};
                 String[] fixVer = new String[] {csvS.get(j).get(4)};
                 if(!injVer[0].equals(fixVer[0])){

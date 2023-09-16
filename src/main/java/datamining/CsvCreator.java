@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
@@ -62,7 +63,7 @@ public class CsvCreator {
             for(z=1; z<len+1; z++){
                 Integer j = 0;
                 List<String> files = new ArrayList<>();
-                LOGGER.warning(versions.get(z).get(0));
+                LOGGER.log(Level.INFO, "Versione: {}", versions.get(z).get(0));
                 while(j<ticket.size() && !ticket.get(j).get(0).equals(versions.get(z).get(0))){
                     j++;
                 }
